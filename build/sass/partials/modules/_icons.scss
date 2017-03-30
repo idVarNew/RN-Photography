@@ -1,0 +1,34 @@
+.c-icon {
+    opacity: 1;
+    display: inline-block;
+    font-size: 1.8em;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    background: url("../img/icons.svg") no-repeat;
+    -webkit-background-size: 1em 5em;
+    background-size: 1em 5em;
+    flex: 1;
+
+    &_twitter {
+        background-position: 0 0;
+    }
+
+    &_facebook {
+        background-position: 0 -1em;
+    }
+
+    &_instagram {
+        background-position: 0 -2em;
+    }
+
+    &_arrow {
+        background-position: 0 -3em;
+        width: 0.45em;
+    }
+
+    &_arrow-dark {
+        background-position: 0 -4em;
+        width: 0.45em;
+    }
+}

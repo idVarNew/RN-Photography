@@ -1,0 +1,38 @@
+.no-flexboxlegacy {
+    body {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+.container {
+    background-color: $colorW;
+    @include media(minM) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        width: 95%;
+        height: 90%;
+        background-color: $colorW;
+        box-shadow: 1px 1px 20px $color3;
+        overflow: hidden;
+    }
+    @include media(minXXL) {
+        width: 75%;
+        height: 70%;
+    }
+}
+
+main {
+    overflow: hidden;
+    min-height: 200px;
+    position: relative;
+    @include media(minM) {
+        margin-left: 100px;
+        height: 100%;
+    }
+}

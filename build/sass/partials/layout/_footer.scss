@@ -1,0 +1,10 @@
+.copyright-notice {
+    font-size: 1.2rem;
+    padding: 25px 15px;
+    text-align: center;
+    background-color: $colorB;
+    color: $colorW;
+    @include media(minM) {
+        display: none;
+    }
+}

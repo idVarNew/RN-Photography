@@ -1,0 +1,19 @@
+.nav-text {
+    display: none;
+}
+@include media(minM) {
+    .is-visible {
+        .nav-text {
+            display: block;
+            width: 100%;
+            font-size: 1.2rem;
+            font-family: raleway;
+            padding: 35px 45px 54px;
+            line-height: 1.8;
+            animation-name: animateNavLiks;
+            animation-fill-mode: forwards;
+            animation-duration: 0.9s;
+            display: block;
+        }
+    }
+}

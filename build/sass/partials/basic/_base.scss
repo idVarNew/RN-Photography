@@ -1,0 +1,79 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+ul {
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.kotek {
+    transition: all 1s;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    background-color: $colorW;
+    font-family: Raleway, Arial, sans-serif;
+    @include media(minM) {
+        background-color: $color4;
+    }
+    height: 100%;
+    color: $color3;
+}
+
+::-moz-selection {
+    background: $color1;
+    text-shadow: none;
+}
+
+::selection {
+    background: $color1;
+    text-shadow: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color3;
+
+    &:hover {
+        color: $color4;
+    }
+
+    &:active {
+        color: $color5;
+    }
+}
+
+h2,
+p {
+    margin: 0;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

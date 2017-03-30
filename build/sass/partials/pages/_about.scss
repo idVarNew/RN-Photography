@@ -1,0 +1,65 @@
+.about-page {
+    .main {
+        padding: 0 15px 15px;
+        @include media(minM) {
+            padding: 0;
+        }
+    }
+
+    .slide {
+        position: relative;
+        margin: 35px 0;
+        @include media(minM) {
+            height: 100vh;
+            margin-bottom: 0;
+        }
+    }
+
+    .slick-next {
+        position: absolute;
+        bottom: 12%;
+        right: 28px;
+        z-index: 700;
+        border: none;
+        background-color: transparent;
+        font-size: 2em;
+    }
+
+    .slick-slide {
+        position: relative;
+    }
+
+    .slide-1,
+    .slide-2 {
+        background-image: none;
+    }
+
+    .slick-dots {
+        border-left: 1px solid $color5;
+
+        & > li > button {
+            background-color: $colorB;
+            border-top: 1px solid $color5;
+        }
+    }
+
+    .slide-show {
+        clear: both;
+    }
+}
+
+.about-content {
+    display: block;
+    @include media(minM) {
+        clear: none;
+        float: left;
+        width: 50%;
+        color: $color3;
+    }
+}
+
+.no-flexboxlegacy {
+    .about-content {
+        //position: relative;
+    }
+}

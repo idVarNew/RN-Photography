@@ -1,0 +1,13 @@
+.slide-numbers {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+
+.first-slide-number {
+    font-size: 2.8rem;
+    padding-right: 4px;
+    animation-name: animateDotTitle;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}

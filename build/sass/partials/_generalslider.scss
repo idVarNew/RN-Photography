@@ -1,0 +1,31 @@
+.slide-show {
+    .slick-track {
+        position: relative;
+    }
+
+    .slick-slide {
+        background-color: $colorW;
+        clear: both;
+    }
+}
+
+.slick-next {
+    animation-name: animateNextButton;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+@keyframes animateNextButton {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,90 @@
+.nav-list {
+    .navbar-icons-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 19px 10px;
+    }
+}
+
+.navbar-icon {
+    display: block;
+
+    span {
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+.navbar-icons {
+    display: none;
+    @include media(minM) {
+        display: block;
+        text-align: center;
+        position: static;
+    }
+}
+@include media(minM) {
+    .navbar-icon {
+        animation-name: animateIcons;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        display: block;
+        clear: both;
+        padding-bottom: 8px;
+    }
+
+    .is-visible {
+        .navbar-icons-content {
+            position: absolute;
+            animation-name: animateIcons;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .navbar-icon {
+            display: inline;
+            padding-right: 10px;
+            animation-name: animateIcon;
+            animation-fill-mode: forwards;
+            clear: none;
+            float: left;
+
+            &:nth-of-type(1) {
+                animation-duration: 1s;
+            }
+
+            &:nth-of-type(2) {
+                animation-duration: 2s;
+            }
+
+            &:nth-of-type(3) {
+                animation-duration: 3s;
+            }
+        }
+    }
+}
+@keyframes animateIcons {
+    from {
+        top: 40px;
+        right: 0;
+        opacity: 0;
+    }
+
+    to {
+        top: 40px;
+        right: 25px;
+        opacity: 1;
+    }
+}
+@keyframes animateIcon {
+    from {
+        opacity: 0;
+        transform: scale(.2);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

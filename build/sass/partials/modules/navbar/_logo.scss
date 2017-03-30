@@ -1,0 +1,11 @@
+.logo-image {
+    width: 50px;
+    padding: 14px 0 5px 5px;
+    @include media(minM) {
+        padding: 15px 0 8px;
+        margin-left: 4px;
+        position: absolute;
+        top: 30px;
+        left: 23px;
+    }
+}

@@ -1,0 +1,86 @@
+.slick-dots {
+    text-align: right;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    top: 0;
+    width: 100px;
+    margin-top: 0;
+    height: 100%;
+    list-style: none;
+
+    li:nth-of-type(1) {
+        margin-top: 50px;
+    }
+
+    .dot-caption {
+        animation-name: animateDotTitle;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        position: absolute;
+        text-align: left;
+        display: block;
+        right: 50px;
+        font-weight: 500;
+        white-space: nowrap;
+        line-height: 2;
+        background-color: $colorW;
+        padding: 0 10px;
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin-top: -3px;
+        letter-spacing: 1px;
+    }
+
+    & > li > button {
+        border: none;
+        color: transparent;
+        font-size: 0;
+        border-bottom: 0;
+        margin-top: 0;
+        padding: 0;
+        height: 2px;
+        @include media(minM) {
+            height: 1px;
+        }
+        background-color: $colorW;
+        width: 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .slick-active {
+        button {
+            animation-name: animateSsliderButtons;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+@keyframes animateSsliderButtons {
+    0% {
+        width: 20px;
+    }
+
+    100% {
+        width: 50px;
+    }
+}
+@keyframes animateDotTitle {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-0px);
+        opacity: 1;
+    }
+}

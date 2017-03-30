@@ -1,0 +1,28 @@
+.contact-content {
+    padding: 15px;
+    @include media(minS) {
+        padding: 35px;
+    }
+    @include media(minM) {
+        padding: 0;
+        float: left;
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+
+    h2.visuallyhidden {
+        width: auto;
+        height: auto;
+        position: static;
+        font-size: 1.8rem;
+        margin: 15px 0;
+        text-transform: uppercase;
+        @include media(minS) {
+            height: 1px;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+    }
+}

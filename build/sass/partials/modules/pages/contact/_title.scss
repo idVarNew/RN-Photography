@@ -1,0 +1,29 @@
+.side-title {
+    display: none;
+    @include media(minM) {
+        display: block;
+        position: absolute;
+        right: 0;
+        border-left: 1px solid $color5;
+        height: 1000%;
+        width: 100px;
+        line-height: 0;
+
+        .page-title {
+            margin-top: 50px;
+            position: absolute;
+            right: 0;
+            padding-right: 75px;
+            font-size: 1.2rem;
+
+            &::after {
+                content: "";
+                width: 70px;
+                height: 1px;
+                position: absolute;
+                background-color: $colorB;
+                right: 0;
+            }
+        }
+    }
+}

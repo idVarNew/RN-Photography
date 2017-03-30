@@ -1,0 +1,13 @@
+.about-image {
+    width: 100%;
+    background-image: url("../img/about/about.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 35vh;
+    @include media(minM) {
+        float: left;
+        width: 50%;
+        background-image: url("../img/about/about.jpg");
+        height: 100%;
+    }
+}

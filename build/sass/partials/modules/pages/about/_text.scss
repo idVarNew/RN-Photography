@@ -1,0 +1,44 @@
+.about-text {
+    @include media(minM) {
+        position: absolute;
+        top: 50%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+
+    &-title {
+        font-size: 2.8rem;
+        font-family: 'Playfair Display', serif;
+        line-height: 1.2;
+        font-weight: 300;
+
+        &::after {
+            content: "";
+            animation-name: about;
+            animation-fill-mode: forwards;
+            animation-duration: 2s;
+            height: 1px;
+            background-color: $color5;
+            display: block;
+            margin: 20px 0;
+        }
+    }
+
+    p {
+        padding-bottom: 25px;
+        @include media(minM) {
+            font-size: 1.3rem;
+            line-height: 2;
+            letter-spacing: 0.5px;
+            font-family: Raleway;
+        }
+
+        span {
+            font-size: 2.0rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.gallery-page {
+    .slick-dots {
+        border-left: 1px solid $color5;
+    }
+
+    .slick-next {
+        position: absolute;
+        bottom: 12%;
+        right: 28px;
+        z-index: 700;
+        border: none;
+        background-color: transparent;
+        font-size: 2em;
+
+        span {
+            color: $colorB;
+        }
+    }
+
+    .slide-numbers {
+        color: $colorB;
+    }
+}

@@ -1,0 +1,103 @@
+.home-page {
+    @include media(minM) {
+        .slide-show {
+            width: 100%;
+        }
+    }
+
+    .slide {
+        position: relative;
+        background-size: cover;
+
+        &-1 {
+            background-image: url("../img/home/mobile/slide1.jpg");
+            @include media(minM) {
+                background-image: url("../img/home/slide1.jpg");
+            }
+        }
+
+        &-2 {
+            background-image: url("../img/home/mobile/slide2.jpg");
+            @include media(minM) {
+                background-image: url("../img/home/slide2.jpg");
+            }
+            background-position: center;
+
+            .slide-content {
+                color: $colorB;
+            }
+
+            a {
+                color: $colorB;
+                border-bottom: 1px solid $colorB;
+            }
+        }
+
+        &-3 {
+            background-image: url("../img/home/mobile/slide3.jpg");
+            @include media(minM) {
+                background-image: url("../img/home/slide3.jpg");
+            }
+        }
+
+        &-numbers {
+            color: $colorW;
+        }
+
+        &-content {
+            position: absolute;
+            bottom: 10%;
+            left: 20px;
+            color: $colorW;
+            font-size: 1.4rem;
+            @include media(minM) {
+                bottom: 15%;
+                left: 50px;
+            }
+        }
+
+        &-title {
+            font-size: 2.3rem;
+            display: block;
+            text-transform: uppercase;
+            @include media(minM) {
+                font-size: 3.8rem;
+            }
+        }
+
+        &-short-text {
+            padding: 10px 0;
+        }
+
+        &-link {
+            font-weight: bold;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 2px;
+            color: $colorW;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .slick {
+        &-dots {
+            border-left: 1px solid #fff;
+
+            & > li > button {
+                border-top: 1px solid #fff;
+            }
+        }
+
+        &-next {
+            position: absolute;
+            bottom: 12%;
+            right: 28px;
+            z-index: 700;
+            border: none;
+            background-color: transparent;
+            font-size: 2em;
+        }
+    }
+}

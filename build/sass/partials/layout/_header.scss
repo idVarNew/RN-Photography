@@ -1,0 +1,42 @@
+.header {
+    background-color: $colorW;
+    padding: 10px 15px;
+    @include media(minM) {
+        height: 100%;
+        width: 100px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        padding: initial;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        height: 100%;
+        padding: 0;
+    }
+
+    & > * {
+        @include media(minM) {
+            width: 100%;
+            height: 20%;
+            display: block;
+        }
+    }
+}
+
+.is-visible {
+    &.header {
+        padding: 10px 15px;
+        @include media(minM) {
+            padding: 0;
+        }
+
+        & > * {
+            @include media(minM) {
+                height: auto;
+            }
+        }
+    }
+}

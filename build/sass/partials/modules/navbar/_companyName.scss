@@ -1,0 +1,34 @@
+.company-name {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    @include media(minM) {
+        height: 20%;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+
+    span {
+        transform: rotate(-90deg) translateX(-125px);
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        font-weight: 500;
+        letter-spacing: 4px;
+        text-align: center;
+        display: block;
+    }
+}
+
+.is-visible {
+    .company-name {
+        display: none;
+    }
+}
