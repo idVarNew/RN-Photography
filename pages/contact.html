@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NR Photography</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico"/>
+        <link href="../assets/css/styles.min.css" rel="stylesheet"/>
+    </head>
+    <body class="contact-page">
+        <div class="container">
+            <header id="header" class="header">
+                <a href="../index.html" class="logo">
+                    <img src="../assets/img/logo.svg" class="logo-image" alt="Company logo"/>
+                </a>
+                <div class="navbar-icons">
+                    <p class="navbar-icons-content">
+                        <a href="http://facebook.com" class="navbar-icon" aria-label="Visit my Facebook page">
+                            <span class="c-icon c-icon_facebook" aria-hidden="true"></span>
+                        </a>
+                        <a href="http://twitter.com" class="navbar-icon" aria-label="Visit my Twitter profile">
+                            <span class="c-icon c-icon_twitter" aria-hidden="true"></span>
+                        </a>
+                        <a href="http://instagram.com" class="navbar-icon" aria-label="Visit my Instagram profile">
+                            <span class="c-icon c-icon_instagram" aria-hidden="true"></span>
+                        </a>
+                    </p>
+                </div>
+                <h1 class="company-name">
+                    <span>NR Photography</span>
+                </h1>
+                <nav class="nav">
+                    <h2 class="visuallyhidden">Main Menu</h2>
+                    <ul id="nav-list" class="nav-list">
+                        <li class="nav-item">
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html">Contact</a>
+                            <span class="visuallyhidden ">(current)</span>
+                        </li>
+                    </ul>
+                    <p class="nav-text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
+                    </p>
+                    <div class="nav-toggle">
+                        <button aria-expanded="false" id="nav-button" class="nav-button is-closed" aria-label="Toggle Navbar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <span class="nav-close" class="visuallyhidden" aria-hidden="true">Close</span>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <iframe
+                    id="map"
+                    class="google-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2445.2637584574604!2d21.045397114209678!3d52.202254173789576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf31d08e3086eda1!2sCafe+Che%C5%82mska!5e0!3m2!1spl!2spl!4v1490651292344"
+                    width="1370"
+                    height="500"
+                    frameborder="0"
+                    style="border:0"
+                    allowfullscreen></iframe>
+                <article class="contact-content">
+                    <h2 class="visuallyhidden ">Contact Form</h2>
+                    <form action="" name="registration" class="contact-form">
+                        <div>
+                            <label for="firstname" class="visuallyhidden">First Name</label>
+                            <input id="firstname" type="text" name="firstname" required placeholder="First name" aria-required="false"/>
+                        </div>
+                        <div>
+                            <label for="lastname" class="visuallyhidden">Last Name</label>
+                            <input id="lastname" type="text" name="lastname" placeholder="Last name" aria-required="true"/>
+                        </div>
+                        <div>
+                            <label for="email" class="visuallyhidden">Email</label>
+                            <input id="email" type="email" name="email" placeholder="Kate@gmail.com" required aria-required="true"/>
+                        </div>
+                        <div>
+                            <label for="message" class="visuallyhidden">Message
+                            </label>
+                            <textarea id="message" class="contact-message" name="message" placeholder="Message *" required data-minlength="20" aria-required="true"></textarea><br>
+                        </div>
+                        <input id="submit-button" type="submit" disabled value="Submit"/>
+                        <p class="required">
+                            <span class="required-sign" aria-hidden="true">*</span>
+                            <span class="required-text" aria-hidden="true">Indicates a required field</span>
+                        </p>
+                    </form>
+                </article>
+                <div class="side-title">
+                    <div class="page-title" aria-hidden="true">
+                        Contact
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer id="footer">
+            <p class="copyright-notice">Copyright © 2016</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <script src="../assets/js/scripts.min.js"></script>
+    </body>
+</html>
